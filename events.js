@@ -3,8 +3,8 @@ console.log("I'm in events.js");
 
 var outputTarget = document.getElementById('output-target');
 var pageHeader = document.getElementById('page-header');
-
 var showHeaderText = document.getElementById('page-title');
+var inputField = document.getElementById('keypress-input');
 
 
 function sectionEvents(target){
@@ -27,4 +27,9 @@ showHeaderText.addEventListener('mouseenter', function(){
 
 showHeaderText.addEventListener('mouseleave', function(){
 	outputTarget.innerHTML = `<p>You left me!!</p>`;
+});
+
+
+inputField.addEventListener('keypress', function(){
+	outputTarget.innerHTML = inputField.value;
 });
