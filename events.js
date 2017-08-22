@@ -5,6 +5,12 @@ var outputTarget = document.getElementById('output-target');
 var pageHeader = document.getElementById('page-header');
 var showHeaderText = document.getElementById('page-title');
 var inputField = document.getElementById('keypress-input');
+var addColorBTN = document.getElementById('add-color');
+var guineaPigText = document.getElementById('guinea-pig');
+var makeLargeBTN = document.getElementById('make-large');
+var addBorderBTN = document.getElementById('add-border');
+var addRoundingBTN = document.getElementById('add-rounding');
+
 
 
 function sectionEvents(target){
@@ -33,3 +39,46 @@ showHeaderText.addEventListener('mouseleave', function(){
 inputField.addEventListener('keypress', function(){
 	outputTarget.innerHTML = inputField.value;
 });
+
+
+addColorBTN.addEventListener('click', function(){
+	guineaPigText.classList.add("makeItBlue");
+});
+
+
+makeLargeBTN.addEventListener('click', function(){
+	guineaPigText.classList.add("makeItBigger");
+});
+
+
+addBorderBTN.addEventListener('click', function(){
+	guineaPigText.classList.add("addBorder");
+});
+
+
+addRoundingBTN.addEventListener('click', function(){
+	guineaPigText.classList.add('addBorderRadius');
+});
+
+
+document.getElementsByTagName("UL")[0].classList.add('makeItBold');
+
+
+document.getElementsByTagName("article")[0].classList.add('makeItBoldAndItalics');
+
+
+document.getElementsByTagName("button")[0].classList.add('button');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
