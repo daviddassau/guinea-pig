@@ -1,3 +1,34 @@
 body {
 	background-color: lightblue;
 }
+
+.makeItBlue {
+	color: blue;
+}
+
+.makeItBigger {
+	font-size: 3em;
+}
+
+.addBorder {
+	border: solid 1px #000000;
+}
+
+.addBorderRadius {
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.makeItBold {
+	font-weight: bold;
+}
+
+.makeItBoldAndItalics {
+	font-weight: bold;
+	font-style: italic;
+}
+
+button {
+	display: block;
+}
